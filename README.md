@@ -2,6 +2,12 @@
 Meteor package that adds stats.js (**JavaScript Performance Monitor**) to your project.
 Please refer to [https://github.com/mrdoob/stats.js/](https://github.com/mrdoob/stats.js/) if you want to checkout the original project.
 
+#### Screenshots
+
+![fps.png](https://cdn.rawgit.com/mrdoob/stats.js/master/files/fps.png)
+![ms.png](https://cdn.rawgit.com/mrdoob/stats.js/master/files/ms.png)
+![mb.png](https://cdn.rawgit.com/mrdoob/stats.js/master/files/mb.png)
+
 > For the moment the package uses the minified version of stats.js hosted on rawgit.com, but this will hopefully change soon with #2
 
 ### Installation
@@ -17,8 +23,8 @@ if (Meteor.isClient) {
       mode: 0,
       // any CSS properties below
       position: "fixed",
-      top: 0,
-      left: 0,
+      bottom: 0,
+      right: 0,
       "z-index": 10000
     });
   });

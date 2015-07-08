@@ -2,8 +2,7 @@ Package.describe({
   name: 'raduchiriac:stats',
   version: '0.0.1',
   summary: 'Adds stats.js to your Meteor project',
-  // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/raduchiriac/meteor-stats',
   documentation: 'README.md',
   debugOnly: true
 });
