@@ -14,7 +14,7 @@ Please refer to [https://github.com/mrdoob/stats.js/](https://github.com/mrdoob/
 `meteor add raduchiriac:stats`
 
 ### Usage
-Add it once, visible everywhere (this will probably change soon with #1). Below are the default values, but make sure you add your own CSS properties if needed.
+Below is an example with the default values, but make sure you add your own CSS properties as needed.
 ```javascript
 if (Meteor.isClient) {
   Meteor.startup(function () {
@@ -29,6 +29,15 @@ if (Meteor.isClient) {
     });
   });
 }
+```
+
+If you use [Iron Router](https://github.com/iron-meteor/iron-router]) this is how you can add **stats.js** to specific routes:
+```javascript
+Router.onBeforeAction(function () {
+  MeteorStats.add();
+}, {
+  only: ['game']
+});
 ```
 
 ### Todo
