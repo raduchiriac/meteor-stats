@@ -31,7 +31,7 @@ if (Meteor.isClient) {
 }
 ```
 
-If you use [Iron Router](https://github.com/iron-meteor/iron-router]) this is how you can add **stats.js** to specific routes:
+If you use [Iron Router](https://github.com/iron-meteor/iron-router]) this is how you can add **stats.js** to specific routes only:
 ```javascript
 Router.onBeforeAction(function () {
   MeteorStats.add();
@@ -41,7 +41,7 @@ Router.onBeforeAction(function () {
 ```
 
 ### Todo
-> This is a work in progress, checkout the Issues tab
+> This is a work in progress, check out the Issues tab
 
 ### License
 MIT
